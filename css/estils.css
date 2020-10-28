@@ -1,0 +1,171 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+body{
+    margin: 5%;
+        background-image: url(../img/Jordan.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #bbab9c;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(27, 4, 156, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: 'Roboto',sans-serif;
+  background-image: url(/img/michael-jordan.jpeg);
+}
+
+
+
+.contenedor {
+	width: 95%;
+	max-width:1000px;
+	margin:auto;
+}
+ 
+.contenedor p {
+	margin-bottom:40px;
+}
+ 
+header nav {
+	background:#997718;
+	margin-bottom:10px;
+}
+ 
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+ 
+header nav ul li {
+	float: left;
+}
+ 
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:rgb(255, 251, 8);
+	text-decoration: none;
+}
+ 
+header nav ul li a:hover {
+	background:#b92929;
+}
+ 
+ 
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+	width:100%;
+  box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+#lletresBio{
+ font-size: 12;
+ color: rgb(40, 61, 100);
+}
+#titolsLletresBio{
+    font-size: 12;
+    color: rgb(40, 61, 100);
+    text-decoration: underline;
+   }
+
+
+
+
+   .slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: cambio 20s infinite alternate linear;
+  }
+  
+  .slider li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider img {
+    width: 100%;
+  }
+  
+  @keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+
+
+  @font-face{
+    font-family : "handwriting";
+  
+    src : url('journal.eot');
+    src : url('journal.eot?') format('eot'),
+          url('journal.woff') format('woff'),
+          url('journal.ttf') format('truetype');
+  }
+  
+  @font-face{
+    font-family : "typewriter";
+  
+    src : url('veteran_typewriter.eot');
+    src : url('veteran_typewriter.eot?') format('eot'),
+          url('veteran_typewriter.woff') format('woff'),
+          url('veteran_typewriter.ttf') format('truetype');
+  }
+  
+  body {
+    font  : 21px sans-serif;
+  
+    padding : 2em;
+    margin  : 0;
+  
+    background : #222;
+  }
+  
+  form {
+    position: relative;
+  
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+  
+    background: #FFF url(background.jpg);
+  }
